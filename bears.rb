@@ -25,7 +25,7 @@ class Bear
 
   def eat_fish_from_river(fish)
     for fish in @river.copy_of_fish_in_river()
-      @stomach << @fish_in_river
+      @stomach << fish
       return @stomach.count
   end
 end

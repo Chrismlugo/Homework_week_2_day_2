@@ -27,8 +27,7 @@ class River
   end
 
   def check_count_fish
-    if @bear.eat_fish_from_river
-      return@fish_in_river.count
-    end
+    @fish_in_river.delete()
+    return @fish_in_river.count_fish
   end
 end
